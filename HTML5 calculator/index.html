@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MyCalculator</title>
+  <link rel="stylesheet" href="design.css">
+  <script src="calculator.js"></script>
+</head>
+<body>
+
+  <div id="calculator-container">
+
+    <h1>MyCalculator</h1>
+
+    <div>
+      <input type="text" id="display" readonly>
+    </div>
+
+    <div>
+      <button onclick="appendToDisplay('7')" class="calculator-button">7</button>
+      <button onclick="appendToDisplay('8')" class="calculator-button">8</button>
+      <button onclick="appendToDisplay('9')" class="calculator-button">9</button>
+      <button onclick="appendToDisplay('/')" class="calculator-button operator">/</button>
+      <button onclick="backspace()" class="calculator-button backspace">⌫</button>
+      <button onclick="clearDisplay()" class="calculator-button clear">C</button>
+    </div>
+
+    <div>
+      <button onclick="appendToDisplay('4')" class="calculator-button">4</button>
+      <button onclick="appendToDisplay('5')" class="calculator-button">5</button>
+      <button onclick="appendToDisplay('6')" class="calculator-button">6</button>
+      <button onclick="appendToDisplay('*')" class="calculator-button operator">*</button>
+    </div>
+
+    <div>
+      <button onclick="appendToDisplay('1')" class="calculator-button">1</button>
+      <button onclick="appendToDisplay('2')" class="calculator-button">2</button>
+      <button onclick="appendToDisplay('3')" class="calculator-button">3</button>
+      <button onclick="appendToDisplay('-')" class="calculator-button operator">-</button>
+    </div>
+
+    <div>
+      <button onclick="appendToDisplay('0')" class="calculator-button">0</button>
+      <button onclick="appendToDisplay('.')" class="calculator-button">.</button>
+      <button onclick="calculate()" class="calculator-button equal">=</button>
+      <button onclick="appendToDisplay('+')" class="calculator-button operator">+</button>
+    </div>
+
+    <button onclick="toggleTheme()" class="theme-toggle">Dark Mode</button>
+  </div>
+</body>
+</html>
